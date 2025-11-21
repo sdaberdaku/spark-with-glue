@@ -1,10 +1,10 @@
-FROM spark:3.5.7-scala2.12-java17-python3-ubuntu
+FROM spark:4.0.1-scala2.13-java21-python3-ubuntu
 
 ARG SPARK_GLUE_CLIENT_URL="https://github.com/sdaberdaku/aws-glue-data-catalog-spark-client"
-ARG SPARK_GLUE_CLIENT_TAG=v3.5.x
-ARG HIVE2_VERSION=2.3.9
-ARG AWS_JAVA_SDK_VERSION=1.12.262
-ARG PY4J_VERSION=0.10.9.7
+ARG SPARK_GLUE_CLIENT_TAG=v4.0.1
+ARG HIVE2_VERSION=2.3.10
+ARG AWS_JAVA_SDK_VERSION=1.12.720
+ARG PY4J_VERSION=0.10.9.9
 
 ENV SPARK_HOME=/opt/spark
 ENV PYTHONPATH="${SPARK_HOME}/python/lib/py4j-${PY4J_VERSION}-src.zip:${SPARK_HOME}/python/lib/pyspark.zip"
