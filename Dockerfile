@@ -1,8 +1,8 @@
-FROM apache/spark:4.1.0-scala2.13-java21-python3-ubuntu
+FROM apache/spark:4.1.1-scala2.13-java21-python3-ubuntu
 
 ARG SPARK_GLUE_CLIENT_URL="https://github.com/sdaberdaku/aws-glue-data-catalog-spark-client"
 ARG MAVEN_REPO_URL="https://repo1.maven.org/maven2"
-ARG SPARK_GLUE_CLIENT_TAG="v4.1.0"
+ARG SPARK_GLUE_CLIENT_TAG="v4.1.1"
 ARG HIVE2_VERSION=2.3.10
 ARG HADOOP_VERSION=3.4.2
 # The AWS Java SDK version 1.12.x is required by the AWS Glue Data Catalog Spark Client
